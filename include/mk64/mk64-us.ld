@@ -10,7 +10,7 @@ PHDRS
 {
     headers   PT_PHDR FILEHDR PHDRS ;
     dummy     PT_LOAD ;
-    data      PT_LOAD ;
+    data      PT_LOAD FILEHDR PHDRS ; /* cover ELF/PHDR so newer binutils stop complaining */
     dynamic   PT_DYNAMIC ;
 
     /* these have to be PT_SHLIB or else the VMA becomes zero
@@ -27,6 +27,9 @@ PHDRS
 
 SECTIONS
 {
+    /* leave space for ELF + program headers now that PT_LOAD includes them */
+    . = SIZEOF_HEADERS;
+
     .dynamic : { *(.dynamic) } :data :dynamic
 
     . = BOOTPATCH_RAM_ADDR;
