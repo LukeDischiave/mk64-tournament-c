@@ -7,7 +7,7 @@
 
 ## Potential Planned features
 - implement existing features from abitalive's mk64 tournament rom repo
-- add race finish timer to 4pVS games (pop up in the middle of the player quadrant)
+- add race finish timer to 4pVS games (pop up in the middle of the player quadrant; timer exists in 2p vs already)
 - fix DMA decrypting rom 60 times per second (dump cartridge to expansion pak)
 - make game run at 30,60fps (Look at optimizations for mario64; Turn off smoke effects)
 - have extra colors/hats for each character (hue shift)
