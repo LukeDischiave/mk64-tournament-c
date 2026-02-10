@@ -7,6 +7,7 @@
 
 ## Potential Planned features
 - implement existing features from abitalive's mk64 tournament rom repo
+- tracking metrics per round (number of MTs, average speed, items etc)
 - add race finish timer to 4pVS games (pop up in the middle of the player quadrant; timer exists in 2p vs already)
 - fix tie logic (change from port priority -> calculated based off timer)
 - fix DMA decrypting rom 60 times per second (dump cartridge to expansion pak)
