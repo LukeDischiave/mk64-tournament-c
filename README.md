@@ -1,18 +1,25 @@
-# Mario Kart 64 Practice ROM
-
-This is a set of patches for Mario Kart 64 that add useful functions for speedrun practice, as well as a framework for developing patches in C.
-
-(TODO: screenshots)
-
-This is still a work in progress; many features are buggy/missing.
-
+# Mario Kart 64 Tournament rom
 
 ## Current features
 - title screen menu for quickly jumping into the game
 - improved debug functions and input display
 - better crash handler
 
-## Planned features
+## Potential Planned features
+- implement existing features from abitalive's mk64 tournament rom repo
+- add timer to 4p vs exists in 2p vs but just add to 4p vs (can prob do this without changing codebase)
+- fix DMA decrypting rom 60 times per second (dump cartridge to expansion pak)
+- make game run at 30,60fps (Look at optimizations for mario64; Turn off smoke effects)
+- have extra colors/hats for each character (hue shift)
+- store player inputs for each race
+- store stats for each race (i.e. rng/bananas thrown.) put it as qr code so commentators can use the info
+- extra controller port for referee
+- lap timer flashes(Use DKR 4p for inspiration)
+- Multipause (assembly code already exists)
+- Patch shortcuts
+
+
+## Planned features by Rena Kunisaki
 - save settings to memory card/flash cart
 - fix timer precision bugs
 - skip logo screen
@@ -30,8 +37,8 @@ This is still a work in progress; many features are buggy/missing.
 This project has only been developed on Linux. If you can build it on Windows, let me know how and I'll update the instructions.
 
 You will need:
-- Python 3
-- mips64-elf-gcc and related tools
+- Python 3 **(Python 3.14.2 tested working 2/10/26)**
+- mips64-elf-gcc and related tools **(mips64-elf-gcc 14.2.0 tested working 2/10/26)**
 - the Ultra64 SDK header files (refer to ultra64.txt)
 - A Mario Kart 64 USA ROM image named `mk64.rom` in Big Endian (ABCD) byte order (the only legal way to get this is to dump it from your own cartridge)
 
