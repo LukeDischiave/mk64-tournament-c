@@ -20,6 +20,7 @@
 - Multipause (assembly code already exists)
 - Patch shortcuts
 - record input data + output via QR Code
+- 480p support
 
 
 ## Planned features by Rena Kunisaki
