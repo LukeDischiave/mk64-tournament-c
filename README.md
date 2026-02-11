@@ -21,6 +21,7 @@
 - Patch shortcuts
 - record input data + output via QR Code
 - 480p support
+- fix dropping through bridge frappe snowland
 
 
 ## Planned features by Rena Kunisaki
